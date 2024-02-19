@@ -1,6 +1,7 @@
 import random
+from art import logo
 
-print("Welcome in BlackJack game!")
+print("Welcome to BlackJack game!")
 CARDS = [2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11]
 computer = []
 user = []
@@ -59,6 +60,7 @@ def reset_data():
 
 
 def game():
+    print(logo)
     if input("Deal the cards? y - yes, n - no: ").lower() == "y":
         pc_card()
         user_card()
